@@ -30,4 +30,10 @@ client.on('message', (channel, tags, message, self) => {
   if (msg === 'هل انت انسان') {
   client.say(channel, 'انا مملوك لبونايف 🤖');
 }
+
+  setInterval(() => {
+  client.say(channel, '💜 لا تنسى تتابع القناة!');
+}, 300000); // كل 5 دقائق
+
+  
 });
