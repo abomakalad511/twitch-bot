@@ -3,7 +3,7 @@ const tmi = require('tmi.js');
 const client = new tmi.Client({
   identity: {
     username: 'العبد',
-    password: process.env.TOKEN
+    password: 'oauth:sdjd6g2u1cn7k8lvpzalf4n0q8ospl'
   },
   channels: ['Abonaaif']
 });
