@@ -5,7 +5,7 @@ const client = new tmi.Client({
     username: 'العبد',
     password: process.env.TOKEN
   },
-  channels: ['YOUR_CHANNEL_NAME']
+  channels: ['Abonaaif']
 });
 
 client.connect();
