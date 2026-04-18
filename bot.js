@@ -27,7 +27,7 @@ client.on('message', (channel, tags, message, self) => {
     client.say(channel, `هلا والله ${user} 👋`);
   }
 
-   if (msg === '!هل انت عبد') {
+   if (msg === '!هل') {
     client.say(channel, `انا مطيع لبونايف ${user} 👋`);
   }
 });
