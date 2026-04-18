@@ -37,7 +37,7 @@ if (msg === 'ابو البي') {
 
   setInterval(() => {
   client.say(channel, '💜 لا تنسى تتابع القناة!');
-}, 300000);
+}, 1000000);
 
 
   const commands = {
