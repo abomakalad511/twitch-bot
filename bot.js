@@ -2,8 +2,8 @@ const tmi = require('tmi.js');
 
 const client = new tmi.Client({
   identity: {
-    username: 'العبد',
-    password: 'oauth:sdjd6g2u1cn7k8lvpzalf4n0q8ospl'
+    username: 'al33bd',
+    password: 'oauth:27vt7pedmjqs0ui3hz9n0opzoh4vmg'
   },
   channels: ['Abonaaif']
 });
