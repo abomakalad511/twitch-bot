@@ -33,7 +33,7 @@ client.on('message', (channel, tags, message, self) => {
 
   setInterval(() => {
   client.say(channel, '💜 لا تنسى تتابع القناة!');
-}, 300000); // كل 5 دقائق
+}, 300000);
 
   
 });
