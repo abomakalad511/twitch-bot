@@ -71,9 +71,8 @@ if (msg === 'ابو البي') {
   '!بث': () => {
     return '🔴 البث شغال لا تفوتك!';
   }
-};
 
-// الردود
+  // الردود
 if (commands[msg]) {
   client.say(channel, commands[msg](channel, tags.username));
 }
@@ -86,5 +85,7 @@ if (msg.includes('هل انت انسان')) {
   if (msg.includes('يا عبد') || msg.includes('ياعبد')) {
   client.say(channel, 'انت العبد انا مملوك لبو نايف 🤖');
 }
+  
+};
   
 });
