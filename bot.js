@@ -40,6 +40,9 @@ client.on('message', (channel, tags, message, self) => {
   if (msg.includes('يا عبد')) {
     client.say(channel, 'انت العبد انا مملوك لبو نايف 🤖');
   }
-
+  
+if (msg.includes('ابو البي')) {
+    client.say(channel, 'تقصد الاصلع ؟');
+  }
   
 });
