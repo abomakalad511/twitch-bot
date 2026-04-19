@@ -27,8 +27,8 @@ client.on('message', (channel, tags, message, self) => {
   }
 
   // 📢 دسكورد
-  if (msg === '!دسكورد') {
-    client.say(channel, '📢 حط رابط الدسكورد هنا');
+  if (msg === '!تيك') {
+    client.say(channel, '📢 https://www.tiktok.com/@zp1dr');
   }
 
   // 📜 قوانين
