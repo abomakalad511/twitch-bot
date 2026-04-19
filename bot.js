@@ -31,9 +31,7 @@ if (msg === 'ابو البي') {
     client.say(channel, `هل تقصد الاصلع؟ ${user} 👋`);
   }
   
-  if (msg === 'هل انت انسان') {
-  client.say(channel, 'انا مملوك لبونايف 🤖');
-  }
+ 
 
   setInterval(() => {
   client.say(channel, '💜 لا تنسى تتابع القناة!');
