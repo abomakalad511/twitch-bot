@@ -16,7 +16,10 @@ client.on('message', (channel, tags, message, self) => {
   const msg = message.toLowerCase();
   const user = tags.username;
 
- 
+ // 👋 هلا
+  if (msg === '!هلا') {
+    client.say(channel, `هلا والله ${user} 👋`);
+  } 
 
   // 💜 فولو
   if (msg === '!فولو') {
