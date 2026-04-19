@@ -87,4 +87,9 @@ if (commands[msg]) {
 if (msg.includes('هل انت انسان')) {
   client.say(channel, 'انا مملوك لبونايف 🤖');
 }
+
+  if (msg.includes('يا عبد') || msg.includes('ياعبد')) {
+  client.say(channel, 'انت العبد انا مملوك لبو نايف 🤖');
+}
+  
 });
