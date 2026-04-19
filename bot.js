@@ -10,83 +10,36 @@ const client = new tmi.Client({
 
 client.connect();
 
-const welcomedUsers = new Set();
-
 client.on('message', (channel, tags, message, self) => {
   if (self) return;
 
-  const user = tags.username;
   const msg = message.toLowerCase();
+  const user = tags.username;
 
-  if (!welcomedUsers.has(user)) {
-    welcomedUsers.add(user);
-    client.say(channel, `✨ نورت يا ${user}`);
-  }
-
+  // 👋 هلا
   if (msg === '!هلا') {
     client.say(channel, `هلا والله ${user} 👋`);
   }
 
-if (msg === 'ابو البي') {
-    client.say(channel, `هل تقصد الاصلع؟ ${user} 👋`);
-  }
-  
- 
-
-  setInterval(() => {
-  client.say(channel, '💜 لا تنسى تتابع القناة!');
-}, 1000000);
-
-
-  
-const commands = {
-  '!فولو': () => {
-    return '💜 لا تنسى المتابعة';
-  }
-};
-
- 
-
-
-  
-
-  '!قوانين': () => {
-    return '🚫 ممنوع السب - 🚫 سبام - استمتعوا 🤍';
-  },
-
-  '!انستا': () => {
-    return '📸 حساب الانستقرام: https://www.instagram.com/';
-  },
-
-  '!تيك': () => {
-    return '🎵 حساب التيك توك: https://www.tiktok.com/@zp1dr';
-  },
-
- 
-  
-
-  '!اب': () => {
-    return '🔥 لا تنسى اللايك يا وحش!';
-  },
-
-  '!بث': () => {
-    return '🔴 البث شغال لا تفوتك!';
+  // 💜 فولو
+  if (msg === '!فولو') {
+    client.say(channel, '💜 لا تنسى المتابعة');
   }
 
-  // الردود
-if (commands[msg]) {
-  client.say(channel, commands[msg](channel, tags.username));
-}
+  // 📢 دسكورد
+  if (msg === '!دسكورد') {
+    client.say(channel, '📢 حط رابط الدسكورد هنا');
+  }
 
-// سؤال البوت
-if (msg.includes('هل انت انسان')) {
-  client.say(channel, 'انا مملوك لبونايف 🤖');
-}
+  // 📜 قوانين
+  if (msg === '!قوانين') {
+    client.say(channel, '🚫 ممنوع السب - 🚫 سبام - احترام الجميع 🤍');
+  }
 
-  if (msg.includes('يا عبد') || msg.includes('ياعبد')) {
-  client.say(channel, 'انت العبد انا مملوك لبو نايف 🤖');
-}
-  
+  // 🤖 رد ذكي
+  if (msg.includes('يا عبد')) {
+    client.say(channel, 'انت العبد انا مملوك لبو نايف 🤖');
+  }
 
   
 });
